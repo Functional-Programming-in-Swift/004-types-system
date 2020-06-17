@@ -36,4 +36,19 @@ class MyEvilWeather: Weather {
     }
 }
 
+func navigateToNextScreeen(weather: Weather) {
+    if weather is Rainy {
+        print("go to buy an umbrella")
+    }
+    
+    if weather is Windy {
+        print("go to buy a coffe")
+    }
+    
+    if weather is Sunny {
+        print("go to buy an ice cream")
+    }
+}
+
 print(Rainy().label())
+navigateToNextScreeen(weather: Rainy())
