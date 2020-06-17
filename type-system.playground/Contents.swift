@@ -4,6 +4,7 @@ enum Weather {
     case rainy
     case windy
     case sunny
+    case snowy
 }
 
 func navigateToNextScreeen(weather: Weather) {
