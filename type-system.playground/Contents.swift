@@ -30,4 +30,10 @@ class Sunny: Weather {
     }
 }
 
+class MyEvilWeather: Weather {
+    init() {
+        super.init(emoji: "😈")
+    }
+}
+
 print(Rainy().label())
