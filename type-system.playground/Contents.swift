@@ -37,16 +37,18 @@ class MyEvilWeather: Weather {
 }
 
 func navigateToNextScreeen(weather: Weather) {
-    if weather is Rainy {
+    switch weather {
+    case is Rainy:
         print("go to buy an umbrella")
-    }
-    
-    if weather is Windy {
+        
+    case is Windy:
         print("go to buy a coffe")
-    }
-    
-    if weather is Sunny {
+        
+    case is Sunny:
         print("go to buy an ice cream")
+    // This is a problem, because dosen't exaustivca
+    default:
+        print("I don't know what to do")
     }
 }
 
