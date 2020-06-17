@@ -17,6 +17,8 @@ func navigateToNextScreeen(weather: Weather) {
         
     case .sunny:
         print("go to buy an ice cream")
+    case .snowy:
+        print("something")
     }
 }
 
