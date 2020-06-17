@@ -1,39 +1,9 @@
 import UIKit
 
-class Weather {
-    let emoji: Character
-    
-    init(emoji: Character) {
-        self.emoji = emoji
-    }
-    
-    func label() -> String {
-        return "Weather is \(emoji)"
-    }
-}
-
-class Rainy: Weather {
-    init() {
-        super.init(emoji: "🌧")
-    }
-}
-
-class Windy: Weather {
-    init() {
-        super.init(emoji: "💨")
-    }
-}
-
-class Sunny: Weather {
-    init() {
-        super.init(emoji: "☀️")
-    }
-}
-
-class MyEvilWeather: Weather {
-    init() {
-        super.init(emoji: "😈")
-    }
+enum Weather {
+    case rainy
+    case windy
+    case sunny
 }
 
 func navigateToNextScreeen(weather: Weather) {
@@ -52,5 +22,5 @@ func navigateToNextScreeen(weather: Weather) {
     }
 }
 
-print(Rainy().label())
-navigateToNextScreeen(weather: Rainy())
+//print(Rainy().label())
+//navigateToNextScreeen(weather: Rainy())
