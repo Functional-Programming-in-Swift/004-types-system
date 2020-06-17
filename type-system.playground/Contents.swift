@@ -8,17 +8,14 @@ enum Weather {
 
 func navigateToNextScreeen(weather: Weather) {
     switch weather {
-    case is Rainy:
+    case .rainy:
         print("go to buy an umbrella")
         
-    case is Windy:
+    case .windy:
         print("go to buy a coffe")
         
-    case is Sunny:
+    case .sunny:
         print("go to buy an ice cream")
-    // This is a problem, because dosen't exaustivca
-    default:
-        print("I don't know what to do")
     }
 }
 
